@@ -41,5 +41,15 @@
       "wwwroot/plugins/ui/weather/skyicons.js",
       "wwwroot/plugins/ui/notify/jquery.gritter.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/bundle/core.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.css",
+      "wwwroot/css/custom.css",
+      "wwwroot/css/icons.css",
+      "wwwroot/css/main.css",
+      "wwwroot/css/plugins.css"
+    ]
   }
 ]
