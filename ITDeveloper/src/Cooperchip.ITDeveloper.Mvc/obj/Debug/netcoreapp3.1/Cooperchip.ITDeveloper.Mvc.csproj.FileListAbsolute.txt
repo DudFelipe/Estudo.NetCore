@@ -120,3 +120,4 @@ D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialViews\_layout_original.cshtml.g.cs
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\bin\Debug\netcoreapp3.1\bundleconfig.json
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialViews\_sub_navbar.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Icones.cshtml.g.cs
