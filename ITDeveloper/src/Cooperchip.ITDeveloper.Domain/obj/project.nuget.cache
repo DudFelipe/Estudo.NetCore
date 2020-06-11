@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "W44T18jIdA5Cz+0DdMpn3fFvA9X5mJSivgvAIQJF+ypAbbU54AFtIwaeq+vXeEzTGenJdfrlSqFaJW1jJ2aBnw==",
+  "success": true,
+  "projectFilePath": "D:\\Projetos\\Estudo.NetCore\\ITDeveloper\\src\\Cooperchip.ITDeveloper.Domain\\Cooperchip.ITDeveloper.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dud Felipe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
