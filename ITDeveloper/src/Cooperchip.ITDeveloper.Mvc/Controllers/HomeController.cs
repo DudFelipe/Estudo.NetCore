@@ -9,6 +9,12 @@ using Cooperchip.ITDeveloper.Mvc.Models;
 
 namespace Cooperchip.ITDeveloper.Mvc.Controllers
 {
+    [Route("")]
+    [Route("paciente")]
+    [Route("pacientes")]
+    [Route("gestao-de-pacientes")]
+    [Route("gestao-de-paciente")]
+    [Route("api/[controller]")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -18,21 +24,36 @@ namespace Cooperchip.ITDeveloper.Mvc.Controllers
             _logger = logger;
         }
 
+        [Route("")]
+        [Route("pagina-inicial")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route("quem-somos")]
+        [Route("sobre-nos")]
+        [Route("sobre/{id:guid}/{paciente}/{categoria?}")]
+        public IActionResult Sobre(Guid id, string pacientes, string categoria)
+        {
+            return View();
+        }
+
+        [Route("privacidade")]
+        [Route("politica-de-privacidade")]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [Route("icones")]
         public IActionResult Icones()
         {
             return View();
         }
 
+        [Route("erro")]
+        [Route("erro-encontrado")]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
