@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Routing.Template;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -48,6 +49,15 @@ namespace Cooperchip.ITDeveloper.Mvc
 
             app.UseEndpoints(endpoints =>
             {
+                //Exemplo de rodas no Startup.cs
+                //endpoints.MapControllerRoute(
+                //    name: "listaproduto",
+                //    pattern: "{controller=Produto}/{action=Lista}/{id?}");
+
+                //endpoints.MapControllerRoute(
+                //    name: "alternativa",
+                //    pattern: "{controller=Produto}/{action=Index}/{id?}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
