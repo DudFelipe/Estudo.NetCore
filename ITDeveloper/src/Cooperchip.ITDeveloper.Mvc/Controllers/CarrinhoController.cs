@@ -29,9 +29,30 @@ namespace Cooperchip.ITDeveloper.Mvc.Controllers
             var model = new CarrinhoViewModel
             {
                 Produtos = produtos,
-                TotalCarrinho = produtos.Sum(p => p.Valor),
-                Mensagem = "Obrigado por comprar conosco!"
+                //TotalCarrinho = produtos.Sum(p => p.Valor),
+                TotalCarrinho = 13.27M,
+                //Mensagem = "Obrigado por comprar conosco!"
+                Mensagem = "Ah!"
             };
+
+            //return View(model);
+            return RedirectToAction("Checkout", model);
+        }
+
+        public IActionResult Checkout(CarrinhoViewModel model)
+        {
+            if(!ModelState.IsValid)
+            {
+                if(ModelState.ErrorCount > 0)
+                {
+                    ViewData["semerro"] = "OPS!";
+                    ModelState.AddModelError("erro", "O MODELO ESTÁ INVÁLIDO");
+                }
+            }
+            else
+            {
+                ViewData["semerro"] = "MODELO OK!";
+            }
 
             return View(model);
         }

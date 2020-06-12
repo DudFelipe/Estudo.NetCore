@@ -162,3 +162,4 @@ D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\bin\Debug\
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Mvc.csproj.CoreCompileInputs.cache
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Mvc.MvcApplicationPartsAssemblyInfo.cache
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Index.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Carrinho\Checkout.cshtml.g.cs
