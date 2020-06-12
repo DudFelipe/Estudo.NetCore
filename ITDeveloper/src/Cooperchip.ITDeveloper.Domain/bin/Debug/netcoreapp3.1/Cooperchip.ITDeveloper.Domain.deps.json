@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Cooperchip.ITDeveloper.Domain/1.0.0": {
+        "runtime": {
+          "Cooperchip.ITDeveloper.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cooperchip.ITDeveloper.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

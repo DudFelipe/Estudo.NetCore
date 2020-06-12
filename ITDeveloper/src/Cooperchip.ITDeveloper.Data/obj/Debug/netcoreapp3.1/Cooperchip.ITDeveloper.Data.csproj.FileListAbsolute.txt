@@ -3,3 +3,13 @@ D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.csprojAssemblyReference.cache
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.AssemblyInfoInputs.cache
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.AssemblyInfo.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.runtimeconfig.json
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.runtimeconfig.dev.json
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.pdb
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.dll
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.pdb
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.csproj.CoreCompileInputs.cache
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.csproj.CopyComplete
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.dll
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.pdb
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Data\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Data.genruntimeconfig.cache

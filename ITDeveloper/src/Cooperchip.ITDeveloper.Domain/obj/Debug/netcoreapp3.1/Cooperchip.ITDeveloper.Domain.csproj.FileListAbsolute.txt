@@ -1,0 +1,8 @@
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.deps.json
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.dll
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\bin\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.pdb
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.AssemblyInfoInputs.cache
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.AssemblyInfo.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.dll
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Domain\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Domain.pdb

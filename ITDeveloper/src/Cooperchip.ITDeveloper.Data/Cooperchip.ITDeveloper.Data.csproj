@@ -12,4 +12,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Cooperchip.ITDeveloper.Domain\Cooperchip.ITDeveloper.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
