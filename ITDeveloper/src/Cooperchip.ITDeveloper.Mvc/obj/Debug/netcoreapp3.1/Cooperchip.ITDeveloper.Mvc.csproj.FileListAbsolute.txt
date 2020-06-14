@@ -191,3 +191,5 @@ D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Details.cshtml.g.cs
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Edit.cshtml.g.cs
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Index.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\_delete_details.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\_edit_create.cshtml.g.cs

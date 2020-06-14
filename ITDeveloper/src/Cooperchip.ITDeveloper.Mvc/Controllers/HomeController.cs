@@ -10,11 +10,8 @@ using Cooperchip.ITDeveloper.Mvc.Models;
 namespace Cooperchip.ITDeveloper.Mvc.Controllers
 {
     [Route("")]
-    [Route("paciente")]
-    [Route("pacientes")]
-    [Route("gestao-de-pacientes")]
     [Route("gestao-de-paciente")]
-    [Route("api/[controller]")]
+    [Route("gestao-de-pacientes")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

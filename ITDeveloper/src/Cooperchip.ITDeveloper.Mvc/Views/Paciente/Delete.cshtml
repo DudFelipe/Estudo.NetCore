@@ -1,87 +1,24 @@
 ﻿@model Cooperchip.ITDeveloper.Domain.Models.Paciente
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Exclusão do Paciente";
 }
 
-<h2>Delete</h2>
+<div class="row">
+    <div class="panel panel-heading">
+        <h3>Tem certeza que deseja excluir este registro?</h3>
+    </div>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Paciente</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DataNascimento)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DataNascimento)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DataInternacao)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DataInternacao)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Ativo)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Ativo)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Cpf)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Cpf)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.TipoPaciente)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.TipoPaciente)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Sexo)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Sexo)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Rg)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Rg)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.RgOrgao)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.RgOrgao)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.RgDataEmissao)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.RgDataEmissao)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+    <div class="panel panel-body">
+        <div>
+            <partial name="_delete_details" />
+
+            <form asp-controller="Paciente" asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Excluir Paciente" class="btn btn-danger" />
+                <a asp-controller="Paciente" asp-action="Index" class="btn btn-info">Voltar à lista</a>
+            </form>
+        </div>
+
+    </div>
 </div>
