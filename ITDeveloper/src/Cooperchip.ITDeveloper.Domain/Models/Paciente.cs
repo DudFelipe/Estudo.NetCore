@@ -10,7 +10,6 @@ namespace Cooperchip.ITDeveloper.Domain.Models
     {
         public Paciente()
         {
-            this.DataInternacao = DateTime.Now;
             this.Ativo = true;
         }
 

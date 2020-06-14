@@ -186,3 +186,8 @@ D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\bin\Debug\
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Mvc.csproj.CoreCompileInputs.cache
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.Mvc.MvcApplicationPartsAssemblyInfo.cache
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Create.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Delete.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Details.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Edit.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Paciente\Index.cshtml.g.cs
