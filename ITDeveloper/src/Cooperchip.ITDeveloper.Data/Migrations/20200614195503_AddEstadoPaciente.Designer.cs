@@ -4,14 +4,16 @@ using Cooperchip.ITDeveloper.Data.ORM;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Cooperchip.ITDeveloper.Data.Migrations
 {
     [DbContext(typeof(ITDeveloperDbContext))]
-    partial class ITDeveloperDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200614195503_AddEstadoPaciente")]
+    partial class AddEstadoPaciente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,9 +85,6 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("EstadoPacienteId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
@@ -106,18 +105,7 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EstadoPacienteId");
-
                     b.ToTable("Paciente");
-                });
-
-            modelBuilder.Entity("Cooperchip.ITDeveloper.Domain.Models.Paciente", b =>
-                {
-                    b.HasOne("Cooperchip.ITDeveloper.Domain.Models.EstadoPaciente", "EstadoPaciente")
-                        .WithMany()
-                        .HasForeignKey("EstadoPacienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

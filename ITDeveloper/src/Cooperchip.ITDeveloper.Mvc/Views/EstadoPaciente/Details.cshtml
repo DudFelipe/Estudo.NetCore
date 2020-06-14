@@ -1,0 +1,23 @@
+﻿
+
+@{
+    ViewData["Title"] = "Detalhes do Estado de Paciente";
+}
+
+<div class="row">
+    <div class="panel panel-heading">
+        <h3>Detalhes do Estado Paciente</h3>
+    </div>
+
+    <div class="panel panel-body">
+
+        <div>
+            <partial name="_delete_details" />
+        </div>
+
+        <div>
+            <a asp-controller="EstadoPaciente" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+            <a asp-controller="EstadoPaciente" asp-action="Index" class="btn btn-default">Voltar à lista</a>
+        </div>
+    </div>
+</div>

@@ -13,5 +13,7 @@ namespace Cooperchip.ITDeveloper.Data.ORM
         public DbSet<Mural> Mural { get; set; }
 
         public DbSet<Paciente> Paciente { get; set; }
+
+        public DbSet<EstadoPaciente> EstadoPaciente { get; set; }
     }
 }

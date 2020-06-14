@@ -1,0 +1,31 @@
+﻿@model Cooperchip.ITDeveloper.Domain.Models.EstadoPaciente
+
+@{
+    ViewData["Title"] = "Adicionar Estado de Paciente";
+}
+
+<div class="row">
+    <div class="panel panel-heading">
+        <h3>Adicionar Estado de Paciente</h3>
+    </div>
+
+    <div class="panel panel-body">
+        <div class="col-md-4">
+            <form asp-controller="EstadoPaciente" asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <partial name="_edit_create" />
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-success" />
+                    <a asp-controller="EstadoPaciente" asp-action="Index" class="btn btn-info">Voltar à lista</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

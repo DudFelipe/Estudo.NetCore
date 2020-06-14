@@ -10,61 +10,54 @@ using Cooperchip.ITDeveloper.Domain.Models;
 
 namespace Cooperchip.ITDeveloper.Mvc.Controllers
 {
-    public class PacienteController : Controller
+    public class EstadoPacienteController : Controller
     {
         private readonly ITDeveloperDbContext _context;
 
-        public PacienteController(ITDeveloperDbContext context)
+        public EstadoPacienteController(ITDeveloperDbContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Paciente.Include(x => x.EstadoPaciente).AsNoTracking().ToListAsync());
+            return View(await _context.EstadoPaciente.ToListAsync());
         }
 
-        public async Task<IActionResult> Details(Guid id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var paciente = await _context.Paciente.Include(x => x.EstadoPaciente).AsNoTracking()
+            var estadoPaciente = await _context.EstadoPaciente
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (paciente == null)
+            if (estadoPaciente == null)
             {
                 return NotFound();
             }
 
-            return View(paciente);
+            return View(estadoPaciente);
         }
 
         public IActionResult Create()
         {
-            ViewBag.EstadoPaciente = new SelectList(_context.EstadoPaciente, "Id", "Descricao");
-
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Paciente paciente)
+        public async Task<IActionResult> Create([Bind("Descricao,Id")] EstadoPaciente estadoPaciente)
         {
             if (ModelState.IsValid)
             {
-                //paciente.Id = Guid.NewGuid();
-                _context.Add(paciente);
+                estadoPaciente.Id = Guid.NewGuid();
+                _context.Add(estadoPaciente);
                 await _context.SaveChangesAsync();
-
-                //return RedirectToAction(nameof(Index)); igual ao de baixo
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
-
-            ViewBag.EstadoPaciente = new SelectList(_context.EstadoPaciente, "Id", "Descricao", paciente.EstadoPacienteId);
-
-            return View(paciente);
+            return View(estadoPaciente);
         }
 
         public async Task<IActionResult> Edit(Guid? id)
@@ -74,22 +67,19 @@ namespace Cooperchip.ITDeveloper.Mvc.Controllers
                 return NotFound();
             }
 
-            var paciente = await _context.Paciente.FindAsync(id);
-            if (paciente == null)
+            var estadoPaciente = await _context.EstadoPaciente.FindAsync(id);
+            if (estadoPaciente == null)
             {
                 return NotFound();
             }
-
-            ViewBag.EstadoPaciente = new SelectList(_context.EstadoPaciente, "Id", "Descricao", paciente.EstadoPacienteId);
-
-            return View(paciente);
+            return View(estadoPaciente);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, Paciente paciente)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Descricao,Id")] EstadoPaciente estadoPaciente)
         {
-            if (id != paciente.Id)
+            if (id != estadoPaciente.Id)
             {
                 return NotFound();
             }
@@ -98,12 +88,12 @@ namespace Cooperchip.ITDeveloper.Mvc.Controllers
             {
                 try
                 {
-                    _context.Update(paciente);
+                    _context.Update(estadoPaciente);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PacienteExists(paciente.Id))
+                    if (!EstadoPacienteExists(estadoPaciente.Id))
                     {
                         return NotFound();
                     }
@@ -114,41 +104,39 @@ namespace Cooperchip.ITDeveloper.Mvc.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-
-            ViewBag.EstadoPaciente = new SelectList(_context.EstadoPaciente, "Id", "Descricao", paciente.EstadoPacienteId);
-            return View(paciente);
+            return View(estadoPaciente);
         }
 
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var paciente = await _context.Paciente.Include(x => x.EstadoPaciente).AsNoTracking()
+            var estadoPaciente = await _context.EstadoPaciente
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (paciente == null)
+            if (estadoPaciente == null)
             {
                 return NotFound();
             }
 
-            return View(paciente);
+            return View(estadoPaciente);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var paciente = await _context.Paciente.FindAsync(id);
-            _context.Paciente.Remove(paciente);
+            var estadoPaciente = await _context.EstadoPaciente.FindAsync(id);
+            _context.EstadoPaciente.Remove(estadoPaciente);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PacienteExists(Guid id)
+        private bool EstadoPacienteExists(Guid id)
         {
-            return _context.Paciente.Any(e => e.Id == id);
+            return _context.EstadoPaciente.Any(e => e.Id == id);
         }
     }
 }

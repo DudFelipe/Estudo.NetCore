@@ -37,7 +37,7 @@
 <div class="form-group">
     <label asp-for="TipoPaciente" class="control-label"></label>
     <select asp-for="TipoPaciente" asp-items="Html.GetEnumSelectList<TipoPaciente>()" class="form-control">
-        <option selected="selected">Selecione uma opção</option>
+        <option value="" selected="selected">Selecione uma opção</option>
     </select>
     <span asp-validation-for="TipoPaciente" class="text-danger"></span>
 </div>
@@ -45,9 +45,17 @@
 <div class="form-group">
     <label asp-for="Sexo" class="control-label"></label>
     <select asp-for="Sexo" asp-items="Html.GetEnumSelectList<Sexo>()" class="form-control">
-        <option selected="selected">Selecione uma opção</option>
+        <option value="" selected="selected">Selecione uma opção</option>
     </select>
     <span asp-validation-for="Sexo" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="EstadoPacienteId" class="control-label"></label>
+    <select asp-for="EstadoPacienteId" asp-items="@ViewBag.EstadoPaciente" class="form-control">
+        <option value="" selected="selected">Selecione uma opção</option>
+    </select>
+    <span asp-validation-for="EstadoPacienteId" class="text-danger"></span>
 </div>
 
 <div class="form-group">

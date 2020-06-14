@@ -2,6 +2,8 @@
 using Cooperchip.ITDeveloper.Domain.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Cooperchip.ITDeveloper.Domain.Models
@@ -12,6 +14,12 @@ namespace Cooperchip.ITDeveloper.Domain.Models
         {
             this.Ativo = true;
         }
+
+        //Criando o relacionamento com a classe EstadoPaciente n:1
+        [ForeignKey("EstadoPaciente")]
+        [Display(Name = "Estado do Paciente")]
+        public Guid EstadoPacienteId { get; set; }
+        public virtual EstadoPaciente EstadoPaciente { get; set; }
 
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
