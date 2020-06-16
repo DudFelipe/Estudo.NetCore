@@ -4,7 +4,11 @@
     ViewData["Title"] = "Lista de Pacientes";
 }
 
-<div class="row">
+<vc:cabecalho titulo="Medical Management-Sys" subtitulo="Módulo Pacientes"></vc:cabecalho>
+
+<partial name="PartialViews/_estado_paciente" />
+
+<div class="panel panel-info panel-controls">
     <div class="panel panel-heading">
         <h3>Lista de Pacientes</h3>
     </div>
@@ -33,8 +37,8 @@
                         @Html.DisplayNameFor(model => model.Ativo)
                     </th>
                     @*<th>
-            @Html.DisplayNameFor(model => model.Cpf)
-        </th>*@
+                            @Html.DisplayNameFor(model => model.Cpf)
+                        </th>*@
                     <th>
                         @Html.DisplayNameFor(model => model.TipoPaciente)
                     </th>
@@ -45,64 +49,64 @@
                         @Html.DisplayNameFor(model => model.EstadoPaciente.Descricao)
                     </th>
                     @*<th>
-            @Html.DisplayNameFor(model => model.Rg)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RgOrgao)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RgDataEmissao)
-        </th>*@
+                            @Html.DisplayNameFor(model => model.Rg)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.RgOrgao)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.RgDataEmissao)
+                        </th>*@
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var item in Model)
                 {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataNascimento)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataInternacao)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Email)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Ativo)
-                    </td>
-                    @*<td>
-            @Html.DisplayFor(modelItem => item.Cpf)
-        </td>*@
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TipoPaciente)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Sexo)
-                    </td>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DataNascimento)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DataInternacao)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Ativo)
+                        </td>
+                        @*<td>
+                                @Html.DisplayFor(modelItem => item.Cpf)
+                            </td>*@
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TipoPaciente)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Sexo)
+                        </td>
 
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EstadoPaciente.Descricao)
-                    </td>
-                    @*<td>
-            @Html.DisplayFor(modelItem => item.Rg)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RgOrgao)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RgDataEmissao)
-        </td>*@
-                    <td>
-                        <a title="Editar Paciente" asp-controller="Paciente" asp-action="Edit" asp-route-id="@item.Id"><span class="fa fa-pencil-square-o fa-2x"></span></a>
-                        <a title="Detalhes do Paciente" asp-controller="Paciente" asp-action="Details" asp-route-id="@item.Id"><span class="fa fa-search fa-2x"></span></a>
-                        <a title="Excluir Paciente" asp-controller="Paciente" asp-action="Delete" asp-route-id="@item.Id"><span class="fa fa-trash fa-2x"></span></a>
-                    </td>
-                </tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EstadoPaciente.Descricao)
+                        </td>
+                        @*<td>
+                                @Html.DisplayFor(modelItem => item.Rg)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RgOrgao)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RgDataEmissao)
+                            </td>*@
+                        <td>
+                            <a title="Editar Paciente" asp-controller="Paciente" asp-action="Edit" asp-route-id="@item.Id"><span class="fa fa-pencil-square-o fa-2x"></span></a>
+                            <a title="Detalhes do Paciente" asp-controller="Paciente" asp-action="Details" asp-route-id="@item.Id"><span class="fa fa-search fa-2x"></span></a>
+                            <a title="Excluir Paciente" asp-controller="Paciente" asp-action="Delete" asp-route-id="@item.Id"><span class="fa fa-trash fa-2x"></span></a>
+                        </td>
+                    </tr>
                 }
             </tbody>
         </table>

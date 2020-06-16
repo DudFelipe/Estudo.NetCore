@@ -200,3 +200,9 @@ D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\EstadoPaciente\Index.cshtml.g.cs
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\EstadoPaciente\_edit_create.cshtml.g.cs
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\EstadoPaciente\_delete_details.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\EstadoCritico\Default.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\EstadoEstavel\Default.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\EstadoGrave\Default.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\EstadoObservacaoViewComponents\Default.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialViews\_estado_paciente.cshtml.g.cs
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\Cooperchip.ITDeveloper.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Cabecalho\Default.cshtml.g.cs
