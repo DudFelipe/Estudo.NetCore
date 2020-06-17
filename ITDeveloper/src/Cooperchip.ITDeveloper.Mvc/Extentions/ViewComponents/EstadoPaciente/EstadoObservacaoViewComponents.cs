@@ -1,12 +1,12 @@
 ﻿using Cooperchip.ITDeveloper.Data.ORM;
-using Cooperchip.ITDeveloper.Mvc.ViewComponents.Helpers;
+using Cooperchip.ITDeveloper.Mvc.Extentions.ViewComponents.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cooperchip.ITDeveloper.Mvc.ViewComponents.EstadoPaciente
+namespace Cooperchip.ITDeveloper.Mvc.Extentions.ViewComponents.EstadoPaciente
 {
     public class EstadoObservacaoViewComponents : ViewComponent
     {

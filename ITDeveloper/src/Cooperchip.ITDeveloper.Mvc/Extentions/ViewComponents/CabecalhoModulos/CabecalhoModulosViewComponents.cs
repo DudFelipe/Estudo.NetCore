@@ -1,11 +1,11 @@
-﻿using Cooperchip.ITDeveloper.Mvc.ViewComponents.Helpers;
+﻿using Cooperchip.ITDeveloper.Mvc.Extentions.ViewComponents.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cooperchip.ITDeveloper.Mvc.ViewComponents.CabecalhoModulos
+namespace Cooperchip.ITDeveloper.Mvc.Extentions.ViewComponents.CabecalhoModulos
 {
     [ViewComponent(Name = "Cabecalho")]
     public class CabecalhoModulosViewComponents : ViewComponent

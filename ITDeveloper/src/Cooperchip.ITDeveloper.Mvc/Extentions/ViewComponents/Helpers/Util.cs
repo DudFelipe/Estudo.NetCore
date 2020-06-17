@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cooperchip.ITDeveloper.Mvc.ViewComponents.Helpers
+namespace Cooperchip.ITDeveloper.Mvc.Extentions.ViewComponents.Helpers
 {
     public static class Util
     {
