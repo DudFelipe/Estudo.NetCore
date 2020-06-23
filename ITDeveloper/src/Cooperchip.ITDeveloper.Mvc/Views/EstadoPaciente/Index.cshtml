@@ -4,40 +4,22 @@
     ViewData["Title"] = "Lista de Estados de Paciente";
 }
 
+<vc:cabecalho titulo="Medical Management - Sys / Módulo Estado dos Pacientes"
+              subtitulo="Módulo de Administração do Paciente"></vc:cabecalho>
+
 <div class="panel panel-info panel-controls">
     <div class="panel panel-heading">
         <h3>Lista de Estados de Paciente</h3>
     </div>
 
     <div class="panel panel-body">
+
         <p>
             <a asp-controller="EstadoPaciente" asp-action="Create" class="btn btn-info"><span class="fa fa-plus-circle"></span>&nbsp;&nbsp;Adicionar</a>
         </p>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Descricao)
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Descricao)
-                        </td>
-                        <td>
-                            <a asp-controller="EstadoPaciente" asp-action="Edit" asp-route-id="@item.Id"><span class="fa fa-pencil-square-o fa-2x"></span></a>
-                            <a asp-controller="EstadoPaciente" asp-action="Details" asp-route-id="@item.Id"><span class="fa fa-search fa-2x"></span></a>
-                            <a asp-controller="EstadoPaciente" asp-action="Delete" asp-route-id="@item.Id"><span class="fa fa-trash fa-2x"></span></a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+        
+        <table-grid Items="@Model"></table-grid>
+
     </div>
 </div>
 
