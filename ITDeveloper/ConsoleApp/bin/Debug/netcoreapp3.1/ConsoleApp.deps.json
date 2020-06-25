@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConsoleApp/1.0.0": {
+        "dependencies": {
+          "Cooperchip.ITDeveloper.Domain": "1.0.0",
+          "Cooperchip.ITDeveloper.DomainCore": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleApp.dll": {}
+        }
+      },
+      "Cooperchip.ITDeveloper.Domain/1.0.0": {
+        "runtime": {
+          "Cooperchip.ITDeveloper.Domain.dll": {}
+        }
+      },
+      "Cooperchip.ITDeveloper.DomainCore/1.0.0": {
+        "runtime": {
+          "Cooperchip.ITDeveloper.DomainCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cooperchip.ITDeveloper.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cooperchip.ITDeveloper.DomainCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

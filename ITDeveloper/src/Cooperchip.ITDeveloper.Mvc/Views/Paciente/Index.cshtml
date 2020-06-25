@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Cooperchip.ITDeveloper.Domain.Models.Paciente>
+@using Cooperchip.ITDeveloper.Mvc.Extentions.ExtensionsMethods
 
 @{
     ViewData["Title"] = "Lista de Pacientes";
@@ -18,7 +19,68 @@
             <a asp-controller="Paciente" asp-action="Create" class="btn btn-info"><span class="fa fa-plus-circle"></span>&nbsp;&nbsp;Adicionar Paciente</a>
         </p>
 
-        <table-grid Items="@Model"></table-grid>
+        @*<table-grid Items="@Model"></table-grid>*@
+
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DataNascimento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Ativo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TipoPaciente)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Sexo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EstadoPaciente.Descricao)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    //var dataNascPtBr = item.DataNascimento.ToBrazilianDate();
+                    var dateTimeNascPtBr = item.DataNascimento.ToBrazilianDateTime();
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            @dateTimeNascPtBr
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Ativo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TipoPaciente)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Sexo)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EstadoPaciente.Descricao)
+                        </td>
+                        <td>
+                            <a title="Editar Paciente" asp-controller="Paciente" asp-action="Edit" asp-route-id="@item.Id"><span class="fa fa-pencil-square-o fa-2x"></span></a>
+                            <a title="Detalhes do Paciente" asp-controller="Paciente" asp-action="Details" asp-route-id="@item.Id"><span class="fa fa-search fa-2x"></span></a>
+                            <a title="Excluir Paciente" asp-controller="Paciente" asp-action="Delete" asp-route-id="@item.Id"><span class="fa fa-trash fa-2x"></span></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
     </div>
 </div>
 

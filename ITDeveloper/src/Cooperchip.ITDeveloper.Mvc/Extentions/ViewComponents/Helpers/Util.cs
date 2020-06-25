@@ -16,7 +16,7 @@ namespace Cooperchip.ITDeveloper.Mvc.Extentions.ViewComponents.Helpers
 
         public static decimal GetNumRegEstado(ITDeveloperDbContext ctx, string estado)
         {
-            return ctx.Paciente.Include(x => x.EstadoPaciente).AsNoTracking().Count(x => x.EstadoPaciente.Descricao.Contains(estado));
+            return ctx.Paciente.AsNoTracking().Count(x => x.EstadoPaciente.Descricao.Contains(estado));
         }
     }
 }
