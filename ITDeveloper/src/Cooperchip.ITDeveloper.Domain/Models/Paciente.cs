@@ -16,7 +16,7 @@ namespace Cooperchip.ITDeveloper.Domain.Models
             this.Ativo = true;
         }
 
-        //Criando o relacionamento com a classe EstadoPaciente n:1
+        //Criando o relacionamento com a classe EstadoPaciente 1:1, todo paciente tem um estado de paciente
         [ForeignKey("EstadoPaciente")]
         [Display(Name = "Estado do Paciente")]
         public Guid EstadoPacienteId { get; set; }

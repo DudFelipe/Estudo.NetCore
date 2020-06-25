@@ -4,14 +4,16 @@ using Cooperchip.ITDeveloper.Data.ORM;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Cooperchip.ITDeveloper.Data.Migrations
 {
     [DbContext(typeof(ITDeveloperDbContext))]
-    partial class ITDeveloperDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200625225223_AddMappingsEstadoPacienteEPacienteMap")]
+    partial class AddMappingsEstadoPacienteEPacienteMap
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,19 +29,19 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Autor")
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Aviso")
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Titulo")
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MuralId");
 
@@ -54,8 +56,7 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasColumnName("Descricao")
-                        .HasColumnType("varchar(30)")
+                        .HasColumnType("nvarchar(20)")
                         .HasMaxLength(20);
 
                     b.HasKey("Id");
@@ -73,10 +74,7 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Cpf")
-                        .HasColumnName("Cpf")
-                        .HasColumnType("varchar(11)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(11);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DataInternacao")
                         .HasColumnType("datetime2");
@@ -85,28 +83,22 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
-                        .HasColumnName("Email")
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("EstadoPacienteId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnName("Nome")
-                        .HasColumnType("varchar(80)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Rg")
-                        .HasColumnName("Rg")
-                        .HasColumnType("varchar(15)")
-                        .HasMaxLength(15);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("RgDataEmissao")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("RgOrgao")
-                        .HasColumnName("RgOrgao")
-                        .HasColumnType("varchar(10)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Sexo")
                         .HasColumnType("int");
@@ -126,6 +118,7 @@ namespace Cooperchip.ITDeveloper.Data.Migrations
                     b.HasOne("Cooperchip.ITDeveloper.Domain.Models.EstadoPaciente", "EstadoPaciente")
                         .WithMany("Paciente")
                         .HasForeignKey("EstadoPacienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

@@ -6,3 +6,4 @@ D:\Projetos\Estudo.NetCore\ITDeveloper\src\DomainCore\obj\Debug\netcoreapp3.1\Co
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\DomainCore\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.DomainCore.csproj.CoreCompileInputs.cache
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\DomainCore\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.DomainCore.dll
 D:\Projetos\Estudo.NetCore\ITDeveloper\src\DomainCore\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.DomainCore.pdb
+D:\Projetos\Estudo.NetCore\ITDeveloper\src\DomainCore\obj\Debug\netcoreapp3.1\Cooperchip.ITDeveloper.DomainCore.csprojAssemblyReference.cache
